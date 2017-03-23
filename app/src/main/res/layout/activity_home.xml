@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="codes.platform.flickerstreaming.HomeActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+        android:id="@+id/GridButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/colorPrimary"
+        fab:fab_icon="@drawable/ic_grid_on_white_36dp"
+        fab:fab_colorPressed="@color/colorPrimaryDark"
+        android:foregroundGravity="bottom"
+        android:layout_alignParentBottom="false"
+        android:layout_gravity="bottom|right"/>
+
+</FrameLayout>
